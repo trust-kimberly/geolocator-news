@@ -13,13 +13,17 @@
     height: 100%;
     background:  #fff;
   }
+
+  #popUp h1 {
+    color: #CD6155;
+  }
   
-  #popUp .closePopUp {
+  #popUp #closePopUp {
     position: absolute;
     top: 20px;
     right: 20px;
     font-size: 40px;
-    color: #FE052C;
+    color: black;
     text-decoration: none;
   }
   
@@ -30,7 +34,7 @@
   }
   
   #popUp.loader .container {
-    display: none;
+    /* display: none; */
   }
   
   #popUp .container {
@@ -43,23 +47,23 @@
   
   #popUp .popUpAction {
     padding: 10px;
-    background-color: #FE052C;
+    background-color: #900C3F;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transform: 0.2s all;
     margin-top: 30px;
     display: inline-block;
+    transition: 0.2s ease-in-out;
   }
   
   #popUp .popUpAction:hover {
-    color: #FE052C;
-    background: #fff;
+    background: #d4d4d4;
   }
   
   /* Header styles */
   header {
-    background-color: #FE052C;
+    background-color: #900C3F;
     position: fixed;
     top: 0;
     left: 0;
@@ -77,7 +81,7 @@
   
   /* Header navigation bar */
   header nav {
-    padding: 10px 2%;
+    padding: 16px 2%;
     width: 76%;
     float: right;
     text-align: right;
@@ -103,7 +107,7 @@
   }
   
   header #search a:hover {
-    background: #CC0020;
+    background: #900C3F;
   }
   
   header #search img {
@@ -128,7 +132,7 @@
   }
   
   header #search.active a {
-    background: #CC0020;
+    background: #900C3F;
   }
   
   header nav a {
@@ -143,57 +147,118 @@
   
   header nav a:hover {
     background-color: #fff;
-    color: #CC0020;
+    color: #900C3F;
   }
   
   nav ul {
-      padding:0;
-      margin:0;
+    padding:0;
+    margin:0;
     margin-right: 30px;
-      list-style: none;
-      position: relative;
-      }
+    list-style: none;
+    position: relative;
+  }
   
   nav ul li {
-      display:inline-block;
-      background-color: #CC0020;
+    display:inline-block;
+    background-color: #900C3F;
     position: relative;
   }
   
   nav ul ul {
-      display: none;
-      position: absolute;
-      top: 40px;
+    display: none;
+    position: absolute;
+    top: 40px;
     right: -30px;
   }
   
   /* Display Dropdowns on Hover */
   nav ul li:hover > ul {
-      display:inherit;
+    display:inherit;
   }
   
   /* First Tier Dropdown */
   nav ul ul li {
-      width:170px;
-      float:none;
-      display:list-item;
-      position: relative;
+    width:170px;
+    float:none;
+    display:list-item;
+    position: relative;
   }
   
-  /* Main Section */
-  #main {
-    margin-top: 65px;
+  /* Search Bar */
+
+  #search-input {
+    height: 30px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px;
   }
-  
+
+  textarea:focus, input:focus {
+    outline: none;
+  }   
+
+  button {
+    width: 75px;
+    transition: all 0.4s ease-in-out;
+    border: none;
+    border-radius: 5px;
+    color: navy;
+  }
+
+  #submit-search {
+    background-color: whitesmoke;
+  }
+
+  #submit-search:hover {
+    color: white;
+    background-color: #d4d4d4;
+  }
+
+  #reset-search {
+    background-color: whitesmoke;
+  }
+
+  #reset-search:hover {
+    color: white;
+    background-color: #d4d4d4;
+  }
+
+  /* Location Div */
+
+  #location {
+    margin: 6% auto 2%;
+    max-width: 1000px;
+  }
+
+  #location h1 {
+    margin-bottom: 5px;
+  }
+
+  #location h2 {
+    margin: 0;
+  }
+
+  #city-wiki {
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: navy;
+  }
+
+  #city-wiki:hover {
+    text-decoration: none;
+    color: wheat;
+    cursor: pointer;
+  }
+
   /* Individual Article Styling */
   .article {
     border-bottom: 1px solid #ccc;
-    transition: 0.2s all;
+    transition: 0.3s all;
   }
   
   .article:hover {
-    padding: 0 2%;
-    background-color: #eee;
+    padding: 0 4%;
+    background-color: #fcf6ea;
   }
   
   .article .featuredImage {
@@ -219,20 +284,20 @@
   
   .article .articleContent h3 {
     margin-bottom: 0;
-    color: #FE052C;
+    color: #CD6155;
   }
   
   .article .articleContent h6 {
-    margin-top: 0;
+    margin: 10px 0 10px;
     color: #666;
   }
   
   .article .impressions {
     width: 15%;
     float: right;
-    font-size: 30px;
+    font-size: 16px;
     margin-top: 15px;
     text-align: right;
-    color: #097FB2;
+    color: #581845;
   }
   

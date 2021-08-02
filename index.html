@@ -14,28 +14,18 @@
 </head>
 <body>
     <header>
-        <section class="container">
+        <div class="container">
           <a href="#"><h1>Feedr</h1></a>
           <nav>
-            <ul>
-              <li><a href="#">News Source: <span>Source Name</span></a>
-                <ul>
-                    <li><a href="#">Source 1</a></li>
-                    <li><a href="#">Source 2</a></li>
-                    <li><a href="#">Source 3</a></li>
-                </ul>
-              </li>
-            </ul>
-            <section id="search">
-              <input type="text" name="name" value="">
-              <a href="#"><img src="images/search.png" alt="" /></a>
-            </section>
+            <input type="text" name="search-input" id="search-input" value="" placeholder="Search for a topic">
+            <button type="submit" id="submit-search">Submit</button>
+            <button type="submit" id="reset-search">Reset</button>
           </nav>
           <div class="clearfix"></div>
-        </section>
+        </div>
       </header>
       <div id="popUp" class="loader hidden">
-        <a class="closePopUp">X</a>
+        <a id="closePopUp">X</a>
         <div class="container">
           <h1>Article title here</h1>
           <p>
@@ -44,24 +34,11 @@
           <a href="#" class="popUpAction" target="_blank">Read more from source</a>
         </div>
       </div>
-      <section id="main" class="container">
-        <section>
-            <h1>Hello, here's what's new in <a id="city-wiki" href="" target="_blank"><span id="city"></span></a>:</h1>
-            <h2>Currently <span id="temp"></span>°F</h2>
-        </section>
-        <!-- <article class="article">
-          <section class="featuredImage">
-            <img src="images/article_placeholder_1.jpg" alt="" />
-          </section>
-          <section class="articleContent">
-              <a href="#" target="_blank"><h3>Test article title</h3></a>
-              <h6>Lifestyle - Mike Jones</h6>
-          </section>
-          <section class="impressions">
-            526
-          </section>
-          <div class="clearfix"></div>
-        </article> -->
-      </section>
+      <div id="location" class="container">
+        <h1>Hello, here's what's new in <a id="city-wiki" href="" target="blank"><span id="city"></span></a>:</h1>
+        <h2>Currently <span id="temp"></span>°F</h2>
+      </div>
+      <div id="main" class="container">
+      </div>
 </body>
 </html>
